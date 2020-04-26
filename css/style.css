@@ -175,6 +175,41 @@ footer {
     float: right;
 }
 
+/* ページトップへ戻るボタン */
+#page_top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 1rem;
+    bottom: 3rem;
+    background: #3f98ef;
+    opacity: 0.6;
+    border-radius: 50%;
+  }
+#page_top a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+}
+#page_top a::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -5px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+
 /* スマホ用の表示 */
 @media only screen and (max-width: 767px) {
     .clear::after {
